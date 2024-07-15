@@ -9,7 +9,7 @@ const EndPage = () => {
     const onFinish = (values) => {
         console.log(values);
         if (values?.name == "1501" || values?.name == "230601" || values?.name == "2306" || values?.name == "150103") {
-            message.success('Thành Công !');
+            message.success('Tha Thứ cho anh nhớ !');
             setCurrent(current + 1);
         } else {
             message.warning("Quên hay là nhập sai thế !");
@@ -82,7 +82,7 @@ const EndPage = () => {
             <div style={{ marginTop: 24 }}>
 
                 {current === steps.length - 1 && (
-                    <Button type="primary" onClick={() => message.success('Processing complete!')}>
+                    <Button type="primary" onClick={() => message.success('Bỏ chặn và trả lời tin nhắn anh đi nhớ!')}>
                         Done
                     </Button>
                 )}
